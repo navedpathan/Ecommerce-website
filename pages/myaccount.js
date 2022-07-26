@@ -7,7 +7,7 @@ const MyAccount = () => {
         if(!localStorage.getItem('token')){
             router.push('/')
           }
-    }, [])
+    }, [router])
     
   return (
     <div>myaccount</div>

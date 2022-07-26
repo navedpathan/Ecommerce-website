@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
      
       <div>
-        <img src="/wallpaper.jpg" alt="" />
+        <Image src="/wallpaper.jpg" alt="" />
       </div>
 
       <section className="text-gray-600 body-font">

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image'
 
 const order = () => {
   return (
@@ -10,10 +11,10 @@ const order = () => {
         <h1 className="text-gray-900 text-3xl title-font font-medium mb-4">Order ID: #89776</h1>
         <p className="leading-relaxed mb-4 text-green-700">Your order has been successfully placed</p>
 
-        <div class="flex mb-4">
-          <a class="flex-grow text-pink-500 py-2 text-lg px-1">Item Description</a>
-          <a class="flex-grow border-gray-300 py-2 text-lg px-1">Quantity</a>
-          <a class="flex-grow border-gray-300 py-2 text-lg px-1">Item Total</a>
+        <div className="flex mb-4">
+          <a className="flex-grow text-pink-500 py-2 text-lg px-1">Item Description</a>
+          <a className="flex-grow border-gray-300 py-2 text-lg px-1">Quantity</a>
+          <a className="flex-grow border-gray-300 py-2 text-lg px-1">Item Total</a>
         </div>
 
         <div className="flex border-t border-gray-200 py-2">
@@ -35,11 +36,11 @@ const order = () => {
         <div className="flex flex-col">
           <span className="title-font font-semibold text-2xl text-gray-900">Subtotal: ₹100</span>
           <div className="my-2">
-          <button class="flex mx-0 text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded">Track Order</button>
+          <button className="flex mx-0 text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded">Track Order</button>
           </div>
         </div>
       </div>
-      <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://dummyimage.com/400x400"/>
+      <Image alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://dummyimage.com/400x400"/>
     </div>
   </div>
 </section>

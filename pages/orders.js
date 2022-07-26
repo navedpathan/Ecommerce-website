@@ -9,7 +9,7 @@ const Orders = () => {
         if(!localStorage.getItem('token')){
             router.push('/')
           }
-    }, [])
+    }, [router])
   return (
     <div>
       <h1 className='font-semibold text-2xl p-8 text-center'>My Orders</h1>
