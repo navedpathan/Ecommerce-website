@@ -14,7 +14,8 @@ export default async function handler(req, res) {
             "mid": process.env.NEXT_PUBLIC_PAYTM_MID,
             "websiteName": "YOUR_WEBSITE_NAME",
             "orderId": req.body.oid,
-            "callbackUrl": 'http://localhost:3000/api/posttransaction',
+            // "callbackUrl": 'http://localhost:3000/api/posttransaction',
+            "callbackUrl": '/api/posttransaction',
             "txnAmount": {
                 "value": req.body.subTotal,
                 "currency": "INR",
